@@ -1,0 +1,10 @@
+<p>This simple site to randomly select a proverb from a collection of English proverbs <p>
+<p class="supertiny">&nbsp;</p>
+<h1>English: <%= @proverb.english %></h1><br>
+<h2>Arabic: <%= @proverb.translation %></h2>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<%= link_to 'Add a new proverb  to our set', new_proverb_path %>
+<p class="supertiny">&nbsp;</p>
+<%= link_to 'See all our proverbs here', new_proverb_path %>

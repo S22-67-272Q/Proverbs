@@ -8,6 +8,18 @@ class Proverb < ApplicationRecord
     scope :active, ->{where(active: true)}
     scope :inactive, ->{where(active: false)}
 
+    def self.get_random_proverb
+        #what do we need to do to extract a random proverb from our db?
+        #The code below also works but relies on SQLite's Random() 
+        #function, aka not the greatest code
+        #order('Random()').first
+        #random().first
+        #The more "rails" way to do it:
+        #puts self.active.to_a.sample
+            self.active.to_a.sample
+    end
+
+
 
    
 end
