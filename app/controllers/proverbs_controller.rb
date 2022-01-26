@@ -4,6 +4,8 @@ class ProverbsController < ApplicationController
   # GET /proverbs or /proverbs.json
   def index
     @proverbs = Proverb.all
+    # @proverbs = Proverb.active.alphabetical.paginate(:page => params[:page]).per_page(10)
+
   end
 
   # GET /proverbs/1 or /proverbs/1.json
