@@ -5,9 +5,9 @@ This is a simple Rails app built during a class demostration in Spring 2022. Thi
 
 This app was built in Rails 5.2.6 and Ruby 2.6.9.
 
-When you can get a copy of this repo by running 
+You can get a copy of this Git repository by [**cloning**](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) it using the `git clone` command as follows:
 
- clone this repo you will have to:
+ $`git clone https://github.com/S22-67-272Q/Proverbs.git`
 
 - Install all the gems with $`bundle install`
 - Create the table `proverbs` on your SQLite database using the following command: $`rails db:migrate`.
