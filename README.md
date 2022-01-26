@@ -1,7 +1,7 @@
 # 67272 - Application Design and Development
 ## Proverb App 
 
-This is a simple Rails app built during a class demostration in Spring 2022. This app contrains proverbs in English and their corresponding Arabic translations. The proverbs are randomly pulled from a set of initial proverbs. Users can edit a proverb, delete a proverb, show the list of all the proverbs, and create a new phrase. The MVC model was introduced and demonstrated through this class. 
+This is a simple Rails app built during a class demostration in Spring 2022. This app contrains proverbs in English and their corresponding Arabic translations. The proverbs are randomly pulled from a set of initial proverbs. Users can edit a proverb, delete a proverb, show the list of all the proverbs, and create a new proverb. The MVC model was introduced and demonstrated through this class. 
 
 This app was built in Rails 5.2.6 and Ruby 2.6.9.
 
@@ -17,7 +17,7 @@ If you want to practice building this applciation from scratch follow the next s
 - $`rails new Proverbs`
 - $`rails generate scaffold Proverb english:string translation:string active:boolean`
 - $`rails generate controller home random`
-- Code your PhraseProverb model.
+- Code your Proverb model.
 - Code your home_controller.
 - You'll have to work on your views, stating with your `home > random.html.erb`, `proverbs > index.html.erb`, layouts, any partials you want to include, etc.
 - Lastly make sure your `routes` are setup properly.
