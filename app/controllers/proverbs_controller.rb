@@ -3,7 +3,11 @@ class ProverbsController < ApplicationController
 
   # GET /proverbs or /proverbs.json
   def index
-    @proverbs = Proverb.all
+    # @proverbs = Proverb.all
+    #  @proverbs = Proverb.active.alphabetical
+    @proverbs = Proverb.alphabetical.paginate(:page =>params[:page]).per_page(10)
+    #  give @proverbs to the template with the same name as this action
+    # and ask it to call the application layout 
   end
 
   # GET /proverbs/1 or /proverbs/1.json
